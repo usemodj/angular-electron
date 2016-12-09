@@ -74,7 +74,7 @@
     "karma-webpack": "1.8.0",
     "node-sass": "^3.10.1",
     "phantomjs-polyfill": "0.0.2",
-    "phantomjs-prebuilt": "^2.1.7",
+    "phantomjs-prebuilt": "^2.1.14",
     "raw-loader": "0.5.1",
     "reflect-metadata": "0.1.8",
     "remap-istanbul": "^0.7.0",
