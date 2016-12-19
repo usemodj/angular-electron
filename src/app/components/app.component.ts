@@ -2,7 +2,7 @@ import { AppState } from './../store/appState.store';
 /**
  * Import decorators and services from angular
  */
-import { Component, OnInit } from '@angular/core';
+import { Component, OnInit, ViewEncapsulation } from '@angular/core';
 
 /*
  * App Component
@@ -12,12 +12,15 @@ import { Component, OnInit } from '@angular/core';
     // The selector is what angular internally uses
     selector: 'ae-app', // <app></app>
     styleUrls: ['./app.theme.scss'],
+    encapsulation: ViewEncapsulation.None,
     template: `
     <div [class.m2app-dark]="isDarkTheme">
         <main>
             <router-outlet></router-outlet>
             <br/>
-            <button md-raised-button color="primary" (click)="isDarkTheme = !isDarkTheme">TOGGLE THEME</button>
+            <md-slide-toggle (change)="isDarkTheme = !isDarkTheme" [checked]="isDarkTheme" color="primary">
+                Set Dark theme
+            </md-slide-toggle>
         </main>
     </div>
     `

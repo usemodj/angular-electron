@@ -13,3 +13,6 @@ import '@angular/http';
 import 'rxjs/add/operator/map';
 import 'rxjs/add/operator/filter';
 import 'rxjs/add/operator/mergeMap';
+
+// Hammer
+import 'hammerjs';

@@ -7,6 +7,7 @@ const webpack = require('webpack');
 const helpers = require('./helpers');
 const path = require('path');
 
+var CopyWebpackPlugin = require('copy-webpack-plugin');
 const webpackTargetElectronRenderer = require('webpack-target-electron-renderer');
 const LoaderOptionsPlugin = require('webpack/lib/LoaderOptionsPlugin');
 
@@ -103,6 +104,13 @@ var config = {
         // See: https://webpack.github.io/docs/list-of-plugins.html#commonschunkplugin
         // See: https://github.com/webpack/docs/wiki/optimization#multi-page-app
         new webpack.optimize.CommonsChunkPlugin({ name: ['vendor', 'polyfills'], minChunks: Infinity }),
+        // Plugin: CopyWebpackPlugin
+        // Description: Copy files and directories in webpack.
+        //
+        // Copies project static assets.
+        //
+        // See: https://www.npmjs.com/package/copy-webpack-plugin
+        new CopyWebpackPlugin([{ from: 'src/assets', to: 'assets' }]),
         /**
        * Plugin LoaderOptionsPlugin (experimental)
        *
