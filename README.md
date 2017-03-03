@@ -1,8 +1,8 @@
-# Angular 2 electron app featuring webpack
+# Angular 2 electron starterkit featuring webpack
 
-A working demo of [electron] with [angular2] using [Webpack], [ngrx] and [material2]
+A working demo of [electron] with [angular] using [Webpack], [ngrx] and [material2]
 
-This is a demo of oauth with github using angular 2 and electron. It uses redux to manage state. You should create a config file as following :
+This is a starter of angular (2 and above) and electron. Its a demo of oauth with github using angular and electron. It uses [ngrx] to manage state. You should create a config file as following :
 
 ```javascript
 {
@@ -51,7 +51,7 @@ Will run the package for OSX. You can also provide additional options to the pac
 
 [Webpack]: http://webpack.github.io
 [MIT]: http://markdalgleish.mit-license.org
-[angular2]: http://angular.io
+[angular]: http://angular.io
 [electron]: http://electron.atom.io/
 [ngrx]: https://github.com/ngrx/store
 [material2]: https://github.com/angular/material2
